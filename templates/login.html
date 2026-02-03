@@ -1,0 +1,19 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+        <div class="container">
+		<h1>Login</h1>
+		<form action="{{ url_for('login') }}" method="post">
+			{{ form.hidden_tag() }}
+			{{ form.email.label }} {{ form.email(size=30) }}<br>
+			{{ form.password.label }} {{ form.password(size=30) }}<br>
+			<input type="submit" value="Log In">
+		</form>
+        </div>
+	</body>
+</html>
